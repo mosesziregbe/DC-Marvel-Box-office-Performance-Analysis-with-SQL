@@ -38,11 +38,11 @@ The dataset consisted of columns including:
 
 - Minutes: The same as above but presented only in minutes.
 
-Franchise: Whether a film is based on a Marvel or DC comic/character
+- Franchise: Whether a film is based on a Marvel or DC comic/character
 
-Character family: The character grouping the protagonist(s) is typically perceived to be part of.
+- Character family: The character grouping the protagonist(s) is typically perceived to be part of.
 
-Domestic %: The percentage of the world-wide gross made up by the domestic (U.S. and Canada) gross.
+- Domestic %: The percentage of the world-wide gross made up by the domestic (U.S. and Canada) gross.
 
 - Gross to Budget: The ratio of production budget to worldwide gross
 
