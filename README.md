@@ -95,7 +95,7 @@ Tool used: MySQL
 19. What is the total number of male-led and female-led movies in the dataset?
 20. What is the average length of Marvel movies vs DC movies?
 
-Click here to see the solutions to Part A.
+[Click here](https://github.com/mosesziregbe/DC-Marvel-Box-office-Performance-Analysis-with-SQL/blob/main/dc_marvel_sql_analysis_PartA.sql) to see the solutions to Part A.
 
 ----
 
@@ -117,6 +117,6 @@ Click here to see the solutions to Part A.
 15. Rank the movies based on their profitability (gross to budget ratio) within each distributor.
 16. Identify the top 5 movies with the highest inflation-adjusted worldwide gross for each character family.
 
-Click here to see the solutions to Part B
+[Click here](https://github.com/mosesziregbe/DC-Marvel-Box-office-Performance-Analysis-with-SQL/blob/main/dc_marvel_sql_analysis_PartB.sql) to see the solutions to Part B
 
 [Click here](https://app.powerbi.com/view?r=eyJrIjoiMzY2YjJhYWMtNWY5Mi00NmYxLThhZWMtMzdmYjFhMDE0ZDM0IiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9&pageName=ReportSection1cb7493dac0598db70e9) to see the DC & Marvel Movie Performance Analysis Dashboard on Power BI
