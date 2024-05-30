@@ -61,9 +61,13 @@ The dataset consisted of columns including:
 - Break Even: Did the worldwide gross pass the rule of thumb for profitability?
 
 #### Project Overview
-This project aims to analyze box office performance within the superhero movie genre, focusing on Marvel and DC franchises, using SQL queries and advanced techniques like window functions to extract insights. It seeks to compare revenue, identify top-grossing movies, analyze profitability, and explore trends in MPAA ratings and character family performance. The objective is to provide valuable insights for stakeholders in the entertainment industry while demonstrating proficiency in SQL querying and data analysis.
+This project aims to analyze box office performance within the superhero movie genre, focusing on Marvel and DC franchises, using SQL queries and advanced techniques like window functions to extract insights. It seeks to compare revenue, identify top-grossing movies, analyze profitability, and explore trends in MPAA ratings and character family performance. 
+
+The objective is to provide valuable insights for stakeholders in the entertainment industry while demonstrating proficiency in SQL querying and data analysis.
 
 #### Methodology
-First, I cleaned and prepared the dataset for analysis, including handling missing values and formatting inconsistencies. I achieved the project objectives by developing a series of SQL queries that addressed a variety of question about the dataset. Each query was designed to extract specific insights and was accompanied by details explaining its purpose. I conducted a comparative analysis of box office performance between Marvel and DC superhero movies, examining average revenue, top-grossing movies, and distributor trends. I also utilized SQL functions and window functions to perform calculations, aggregations, and data manipulations.
+First, I cleaned and prepared the dataset for analysis, including handling missing values and formatting inconsistencies. I achieved the project objectives by developing a series of SQL queries that addressed a variety of question about the dataset. Each query was designed to extract specific insights and was accompanied by details explaining its purpose. 
+
+I conducted a comparative analysis of box office performance between Marvel and DC superhero movies, examining average revenue, top-grossing movies, and distributor trends. I also utilized SQL functions and window functions to perform calculations, aggregations, and data manipulations.
 
 Tool used: MySQL
