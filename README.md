@@ -71,3 +71,51 @@ First, I cleaned and prepared the dataset for analysis, including handling missi
 I conducted a comparative analysis of box office performance between Marvel and DC superhero movies, examining average revenue, top-grossing movies, and distributor trends. I also utilized SQL functions and window functions to perform calculations, aggregations, and data manipulations.
 
 Tool used: MySQL
+
+#### Data Analysis
+##### PartA: Basic SQL analysis
+1. What is the average box office revenue for DC superhero movies compared to marvel superhero movies?
+2. Which DC and Marvel superhero movie has the highest box office revenue respectively?
+3. Which year had the highest total box office revenue for superhero movies?
+4. Which movie has the highest worldwide box office gross, and what is its gross-to-budget ratio?
+5. Which distributor has released the most successful (in terms of worldwide gross) superhero movies?
+6. How many movies have a Rotten Tomatoes critic score above 80%?
+7. What is the average domestic percentage (Domestic %) for male-led and female-led movies?
+8. Which character family has the highest average worldwide gross?
+9. What is the distribution of MPAA ratings among the movies?
+10. How has the average budget and worldwide gross changed over the years?
+11. Which movies have failed to break even (worldwide gross < 2.5 times production budget) in the past 5 years?
+12. Which movie has the lowest Rotten Tomatoes critic score?
+13. Which movie(s) achieved profitability according to the 2.5x production budget rule for profitability, but still had a relatively low Rotten Tomatoes critic score?
+14. How does the average gross to budget ratio vary across different MPAA ratings?
+15. Which Marvel movie had the highest Rotten Tomatoes critic score?
+16. What is the distribution of MPAA ratings among DC movies?
+17. How does the average inflation-adjusted worldwide gross vary across different phases of the Marvel Cinematic Universe?
+18. Which character family has the highest average gross to budget ratio?
+19. What is the total number of male-led and female-led movies in the dataset?
+20. What is the average length of Marvel movies vs DC movies?
+
+Click here to see the solutions to Part A.
+
+----------
+
+##### PartB : SQL analysis using Windows function and CTE
+1. How does the recent performance of movies within each character family compare in terms of worldwide gross rankings?
+2. Calculate the running total of worldwide gross for each distributor, ordered by release year.
+3. Find the movies whose worldwide gross is more than 1.5 times the average worldwide gross for their respective character family.
+4. Retrieve the top 3 movies with the highest worldwide gross for each year, along with their rank within that year.
+5. Calculate the percentage contribution of each movie's domestic gross to its distributor's total domestic gross.
+6. Find the movies whose worldwide gross is more than the average worldwide gross of all movies released in the same year yet the movies were still a flop.
+7. Retrieve the movies whose worldwide gross is in the top 25% for their respective MPAA rating.
+8. Which DC movies have been a success for the past 7 years?    
+9. Identify the movies that have the highest and lowest gross-to-budget ratio for each distributor.
+10. Are both venom movies a success?
+11. Retrieve the movies that have a higher worldwide gross than all the movies released in the previous year by the same distributor.
+12. What is the cumulative box office gross worldwide for each distributor over the years?
+13. Can you identify the movie with the highest box office gross worldwide for each MPAA rating category?
+14. Calculate the average box office gross worldwide for each year, and also include the average gross for the previous year in the same row.
+15. Rank the movies based on their profitability (gross to budget ratio) within each distributor.
+16. Identify the top 5 movies with the highest inflation-adjusted worldwide gross for each character family.
+
+Click here to see the solutions to Part B
+
