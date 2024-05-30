@@ -1,4 +1,4 @@
-# DC Marvel Box office Performance Analysis with SQL
+# DC Marvel Box office Performance Analysis with SQL 🎬🍿
 
 Welcome to a thrilling adventure through the world of superheroes, where data meets entertainment in an epic showdown! In this SQL-powered exploration, we embark on a journey into the box office realm of Marvel and DC superhero movies.
 
@@ -119,3 +119,4 @@ Click here to see the solutions to Part A.
 
 Click here to see the solutions to Part B
 
+[Click here[(https://app.powerbi.com/view?r=eyJrIjoiMzY2YjJhYWMtNWY5Mi00NmYxLThhZWMtMzdmYjFhMDE0ZDM0IiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9&pageName=ReportSection1cb7493dac0598db70e9) to see the Movie Performance Analysis Dashboard on Power BI
