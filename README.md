@@ -97,9 +97,9 @@ Tool used: MySQL
 
 Click here to see the solutions to Part A.
 
-----------
+----
 
-##### PartB : SQL analysis using Windows function and CTE
+##### PartB : More SQL analysis using Windows function and CTE
 1. How does the recent performance of movies within each character family compare in terms of worldwide gross rankings?
 2. Calculate the running total of worldwide gross for each distributor, ordered by release year.
 3. Find the movies whose worldwide gross is more than 1.5 times the average worldwide gross for their respective character family.
@@ -119,4 +119,4 @@ Click here to see the solutions to Part A.
 
 Click here to see the solutions to Part B
 
-[Click here[(https://app.powerbi.com/view?r=eyJrIjoiMzY2YjJhYWMtNWY5Mi00NmYxLThhZWMtMzdmYjFhMDE0ZDM0IiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9&pageName=ReportSection1cb7493dac0598db70e9) to see the Movie Performance Analysis Dashboard on Power BI
+[Click here](https://app.powerbi.com/view?r=eyJrIjoiMzY2YjJhYWMtNWY5Mi00NmYxLThhZWMtMzdmYjFhMDE0ZDM0IiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9&pageName=ReportSection1cb7493dac0598db70e9) to see the DC & Marvel Movie Performance Analysis Dashboard on Power BI
