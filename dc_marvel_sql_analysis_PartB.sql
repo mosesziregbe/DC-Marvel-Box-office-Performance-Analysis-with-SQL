@@ -1,7 +1,7 @@
 
-
 -- 1. How does the recent performance of movies within each character family 
 -- compare in terms of worldwide gross rankings?
+
 
 WITH character_family_rank AS
 (
@@ -19,8 +19,10 @@ SELECT * FROM character_family_rank
 WHERE gross_rankings <= 2;
 
 
+
 -- 2. Calculate the running total of worldwide gross for each distributor, 
 -- ordered by release year.
+
 
 SELECT distributor, 
 	    year, 
@@ -69,9 +71,11 @@ FROM movie_boxoffice
 )
 SELECT COUNT(film) FROM avg_character_fam
 WHERE worldwide_gross > 1.5 * (avg_gross);
-    
+
+
 -- 4. Retrieve the top 3 movies with the highest worldwide gross 
 -- for each year, along with their rank within that year.
+
 
 WITH top_movies AS
 (
@@ -85,8 +89,10 @@ SELECT * FROM top_movies
 WHERE gross_rank IN (1,2,3);  
 
 
+
 -- 5. Calculate the percentage contribution of each movie's domestic gross 
 -- to its distributor's total domestic gross.
+
 
 WITH ranked_domestic_gross AS
 (
@@ -103,7 +109,8 @@ SELECT
 FROM
     ranked_domestic_gross;
     
-    
+
+
 -- 6. Find the movies whose worldwide gross is more than the 
 -- average worldwide gross of all movies released in the same year
 -- yet the movies were still a flop.
@@ -124,6 +131,7 @@ WHERE worldwide_gross > avg_worldwide_gross
 AND break_even = "Flop";
 
 
+
 -- 7. Retrieve the movies whose worldwide gross 
 -- is in the top 25% for their respective MPAA rating.
 
@@ -137,6 +145,7 @@ FROM movie_boxoffice
 SELECT * FROM quartile
 WHERE quartile=1
 ;
+
 
 
 -- 8. Which DC movies have been a success for the past 7 years?
@@ -157,7 +166,8 @@ WHERE
     year >= YEAR(CURRENT_DATE()) - 7
     AND franchise = 'DC';
     
-    
+
+
 SELECT 
     SUM(CASE WHEN break_even = 'Success' THEN 1 ELSE 0 END) AS successful_movies,
     COUNT(*) AS total_movies,
@@ -167,10 +177,11 @@ FROM
 WHERE 
     year >= YEAR(CURRENT_DATE()) - 7
     AND franchise = 'Marvel';
-    
+
     
     
 -- 9. Identify the movies that have the highest and lowest gross-to-budget ratio for each distributor.
+
 
 WITH distributor_rank AS (
     SELECT
@@ -196,6 +207,7 @@ WHERE
     high_rank = 1 OR low_rank = 1;
 
 
+
 -- 10. 	Are both venom movies a success?
 
 SELECT film, worldwide_gross, break_even 
@@ -203,8 +215,10 @@ FROM movie_boxoffice
 WHERE film LIKE 'venom%';
 
 
+
 -- 11. Retrieve the movies that have a higher worldwide gross than all 
 -- the movies released in the previous year by the same distributor.
+
 
 WITH ranked_movies AS (
     SELECT 
@@ -229,7 +243,9 @@ WHERE
     worldwide_gross > max_gross_last_year;
 
 
+
 -- 12. What is the cumulative box office gross worldwide for each distributor over the years?
+
 
 WITH distributor_cumulative_gross AS (
     SELECT DISTINCT
@@ -248,6 +264,7 @@ FROM
 
 
 -- 13. Can you identify the movie with the highest box office gross worldwide for each MPAA rating category?
+
 
 WITH highest_gross_movies
 AS
@@ -288,17 +305,14 @@ FROM
 -- 15. Rank the movies based on their profitability 
 -- (gross to budget ratio) within each distributor.
 
-SELECT 
-		distributor, 
-		film, 
+SELECT distributor, film, 
         RANK() OVER(PARTITION BY distributor ORDER BY gross_to_budget DESC) AS gross_to_budget_rank
 FROM movie_boxoffice;
 
 
-
-
 -- 16. Identify the top 5 movies with the highest inflation-adjusted 
 -- worldwide gross for each character family.
+
 
 WITH ranked_movies AS
 (
